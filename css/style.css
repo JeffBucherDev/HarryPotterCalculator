@@ -40,7 +40,7 @@ button {
 }
 
 .calculatorGrid > button:hover {
-  background-color: rgba(62, 60, 223, 0.863);
+  background-color: rgba(21, 115, 32, 0.863);
 }
 
 .twoSpaces {
@@ -49,7 +49,7 @@ button {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(19, 20, 97, 0.8);
+  background-color: rgba(21, 49, 15, 0.8);
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
