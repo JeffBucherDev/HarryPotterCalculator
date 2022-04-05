@@ -5,6 +5,7 @@ class Calculator {
     this.clear();
   }
 
+  //Clearing & Deleting Logic
   clear() {
     this.currentOperand = "";
     this.previousOperand = "";
@@ -30,6 +31,7 @@ class Calculator {
     this.currentOperand = "";
   }
 
+  // Computational Logic
   compute() {
     let computation;
     const prev = parseFloat(this.previousOperand);
@@ -56,6 +58,7 @@ class Calculator {
     this.previousOperand = "";
   }
 
+  // Display Logic, Including Decimals
   getDisplayNumber(number) {
     const stringNumber = number.toString();
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
@@ -89,6 +92,7 @@ class Calculator {
   }
 }
 
+// Constant Variables
 const numberButtons = document.querySelectorAll("[data-number]");
 const operationButtons = document.querySelectorAll("[data-operation]");
 const equalsButton = document.querySelector("[data-equals]");
@@ -106,6 +110,7 @@ const calculator = new Calculator(
   currentOperandTextElement
 );
 
+// Buttons and their Event Listeners
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.appendNumber(button.innerText);
