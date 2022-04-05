@@ -76,3 +76,15 @@ button {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 480px) {
+  body {
+    background: url("/img/harry-potter-mobile.jpg") no-repeat;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background: url("/img/harry-potter-tablet.jpg") no-repeat;
+  }
+}
